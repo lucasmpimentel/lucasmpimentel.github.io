@@ -1,0 +1,311 @@
+/* AQUI ESTÃO AS CONFIGURAÇÕES DE GRID E POSICIONAMENTO */
+body {
+  background-color: rgb(253, 251, 251);
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  min-height: 50px;
+}
+
+footer {
+  min-height: 50px;
+}
+
+/* AQUI COMEÇA O CABEÇALHO */
+#cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(black, black, black, transparent);
+  height: 200px;
+  width: 100%;
+  z-index: 9998;
+}
+
+.textlock {
+  position: absolute;
+  top: 15px;
+  left: 200px;
+  line-height: 0cm;
+  max-width: 500px;
+}
+
+#titulo {
+  font-family: mohave, sans-serif;
+  font-style: italic;
+  font-size: 54px;
+  color: rgb(33, 150, 243);
+}
+
+#subtitle {
+  font-family: monospace;
+  color: rgb(187, 187, 187);
+  max-width: 500px;
+  font-size: 18px;
+}
+
+#nop {
+  text-decoration: line-through;
+}
+
+#photolock {
+  position: absolute;
+  left: 40px;
+  top: 15px;
+  max-height: 130px;
+  max-width: 130px;
+}
+
+#minha_foto {
+  border: 3px solid rgb(33, 150, 243);
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* Botões do menu lateral */
+.menuLateral {
+  font-family: mohave, sans-serif;
+  position: fixed;
+  left: -110px;
+  padding: 15px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 16pt;
+  color: whitesmoke;
+  opacity: 0.7;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  z-index: 9997;
+}
+
+.iconMenu {
+  width: 30px;
+  height: 30px;
+  float: right;
+  filter: invert(90%);
+}
+
+.menuLateral:hover {
+  left: 0;
+  opacity: 1;
+}
+
+.menuLateral:active {
+  filter: saturate(0);
+}
+
+.inicio {
+  top: 200px;
+  background-color: rgb(185, 80, 180);
+}
+
+.sobre {
+  top: 265px;
+  background-color: rgb(33, 150, 243);
+}
+
+.conteudo {
+  top: 330px;
+  background-color: rgb(33, 150, 243);
+}
+
+.contato {
+  top: 395px;
+  background-color: rgb(33, 150, 243);
+}
+
+.refers {
+  top: 460px;
+  background-color: rgb(33, 150, 243);
+}
+
+/* CONFIG. DO VIDEO PARA BG */
+.videoIntro {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* CONTEÚDO */
+#contentBox {
+  position: relative;
+  margin-top: 200px;
+  margin-left: 0;
+  z-index: 9996;
+}
+
+#corpo {
+  top: 200px;
+  left: 200px;
+  max-width: 1366px;
+}
+
+.lado-esquerdo {
+  float: left;
+}
+
+.lado-direito {
+  float: right;
+  width: 20%;
+}
+
+.me {
+  font-family: monospace;
+  font-size: 12pt;
+  color: lavenderblush;
+  text-align: justify;
+}
+
+#escondido {
+  visibility: hidden;
+}
+
+#about {
+  max-width: 650px;
+  margin-left: 170px;
+  margin-bottom: 90px;
+  color: rgb(241, 248, 255);
+  line-height: 20px;
+  background-color: rgba(185, 80, 189, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#sobre_mim {
+  margin-top: 25px;
+}
+
+#passagem {
+  clear: both;
+  max-width: 300px;
+  margin-left: 870px;
+  margin-bottom: 90px;
+  color: rgb(241, 248, 255);
+  line-height: 20px;
+  background-color: rgba(33, 150, 243, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+#content {
+  clear: both;
+  max-width: 650px;
+  margin-left: 170px;
+  margin-bottom: 90px;
+  color: rgb(241, 248, 255);
+  line-height: 20px;
+  background-color: rgba(33, 150, 243, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.tituloDoArtigo {
+  font-family: bangers, cursive;
+  font-size: 42pt;
+  line-height: 40pt;
+  margin-top: 25px;
+  margin-bottom: -5pt;
+  letter-spacing: 3px;
+}
+
+.pisca {
+  font-weight: 900;
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@keyframes blink {
+
+  from { opacity: 1; }
+
+  to { opacity: 0; }
+}
+
+#tabela {
+  text-align: center;
+}
+
+h3 {
+  font-family: mohave, sans-serif;
+  margin-bottom: 0;
+  font-size: 24pt;
+}
+
+#licoes_aprendidas {
+  font-family: monospace;
+}
+
+#licoes_a_aprender {
+  font-family: monospace;
+}
+
+/* RODAPÉ E REFERÊNCIAS */
+#rodape {
+  position: relative;
+  color: rgb(253, 251, 251);
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 370px;
+  padding: 100px;
+  clear: both;
+  z-index: 9999;
+}
+
+#contact {
+  float: left;
+  margin-left: 170px;
+  max-width: 500px;
+  font-size: 14pt;
+}
+
+.autores {
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+#linkscontatos {
+  font-family: monospace;
+  font-size: 12pt;
+}
+
+/* LOGOMARCAS */
+.boxlogo {
+  position: relative;
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+  max-width: 100px;
+}
+
+.boxlogotrybe {
+  max-width: 200px;
+  float: right;
+}
+
+#linked {
+  width: 30%;
+  margin-left: 10px;
+}
+
+#github {
+  width: 30%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#trybe {
+  width: 100%;
+  float: right;
+  filter: brightness(2);
+}
+
+#xp {
+  width: 75%;
+  float: right;
+}
