@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    align-items: space-around;
+    justify-content: center;
+}
+
+#container h1 {
+    text-align: center;
+}
