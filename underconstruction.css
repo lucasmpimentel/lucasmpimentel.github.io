@@ -5,8 +5,9 @@
 }
 
 #container {
-    display: flex;
     align-items: space-around;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     min-height: 100vh;
     min-width: 100vw;
